@@ -10,7 +10,12 @@
 ![图片名称](https://github.com/cserjun/externship/blob/master/image/3.png)  
 ![图片名称](https://github.com/cserjun/externship/blob/master/image/4.png)  
 ![图片名称](https://github.com/cserjun/externship/blob/master/image/5.png)  
-。。。。。。。。。。。。。等。。。。。。。。。。。。。。。  
-系统小功能：  
+![图片名称](https://github.com/cserjun/externship/blob/master/image/6.png)  
+。。。。。。。。。。。。。。。等。。。。。。。。。。。。。。。  
+系统小功能（红标起，后面三个图标）：  
 局部刷新、全屏、便签  
 ![图片名称](https://github.com/cserjun/externship/blob/master/image/10.png)
+系统说明：  
+本系统用户分为用户和管理员两个角色。  
+教师（管理员）：⑴可以查看学生提交的文章（技术周报、身体状况、自我评价等模块），⑵根据实际情况在模块管理中增加新模块，⑶人员注册于管理，⑷查看学生提交的问题，⑸可以发布公告（解决学生问题可以通过公告的方式）。   
+学生（用户）：⑴主要发表文章并对文章进行管理，需要注意的事，已经发布过后的文章不能进行操作，⑵查看模块，⑶查看公告，⑷问题的发表和管理
