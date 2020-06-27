@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper.NotificationsMapper">
+    <insert id="addNewNotification" parameterType="org.sang.bean.Notifications" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO notifications SET notification=#{notification},date=#{date},upracticecompany=#{upracticecompany}
+    </insert>
+     <select id="notificationsList" resultType="org.sang.bean.Notifications" parameterType="String">
+         select * from Notifications where upracticecompany=#{upracticecompany}
+     </select>
+    <delete id="deleteNotificationById">
+        DELETE FROM Notifications WHERE id=#{aid}
+    <!--IN-->
+        <!--<foreach collection="aids" item="aid" open="(" close=")" separator=",">-->
+            <!--#{aid}-->
+        <!--</foreach>-->
+    </delete>
+</mapper>

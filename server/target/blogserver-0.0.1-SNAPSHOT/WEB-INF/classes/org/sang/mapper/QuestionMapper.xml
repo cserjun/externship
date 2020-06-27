@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper.QuestionMapper">
+    <select id="getAllQuestion" resultType="org.sang.bean.Question">
+        SELECT  u.`nickname`,q.* FROM question q, user u where u.id=q.uid
+    </select>
+    <select id="getAllUidQuestion" resultType="org.sang.bean.Question" parameterType="Long">
+        SELECT  u.`nickname`,q.* FROM question q, user u where u.id=q.uid and uid=#{uid}
+    </select>
+    <delete id="deleteQuestionByIds">
+        DELETE FROM question WHERE id IN
+        <foreach collection="ids" separator="," open="(" close=")" item="id">
+            #{id}
+        </foreach>
+    </delete>
+    <update id="updateQuestionById" parameterType="org.sang.bean.Question">
+        UPDATE question SET question=#{question} WHERE id=#{id}
+    </update>
+    <insert id="addQuestion" parameterType="org.sang.bean.Question">
+        INSERT INTO question SET date=#{date},question=#{question},uid=#{uid}
+    </insert>
+    <!--<resultMap id="nQuestion" type="org\sang\bean\Question">-->
+        <!--<id column="id" property="id"/>-->
+        <!--<result column="question" property="question"/>-->
+        <!--<result column="date" property="date"/>-->
+        <!--<result column="uid" property="uid"/>-->
+        <!--<result column="nickname" property="nickname"/>-->
+    <!--</resultMap>-->
+</mapper>
