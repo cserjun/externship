@@ -15,7 +15,7 @@
     "file-saver": "^2.0.2",
     "font-awesome": "^4.7.0",
     "html2canvas": "^1.0.0-rc.5",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.5.1",
     "mavon-editor": "^2.4.13",
     "vue": "^2.5.2",
     "vue-echarts": "^2.6.0",
